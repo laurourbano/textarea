@@ -1,0 +1,44 @@
+body{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: 'Montserrat'}
+
+textarea{
+    margin-bottom: 15px;
+    border: 1px solid blueviolet;
+}
+
+button{
+    font-weight: bold;
+    width: 200px;
+    border-radius: 4px;
+    padding: 10px;
+    border : none ;
+    background:#26348f;
+    color:white;
+}
+
+button:hover{
+    background: indigo;
+}
+
+#resultado{
+    margin-top: 1.5rem !important;
+}
+
+.links{
+    display: block;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #26348f;
+    text-decoration: none;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.links:hover{
+    background-color: rgba(50, 50, 93, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
