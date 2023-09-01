@@ -1,4 +1,4 @@
-export function salvarConteudo() {
+function salvarConteudo() {
   const textarea = document.getElementById('conteudo');
   const resultado = document.getElementById('resultado');
 
