@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Links na textarea</title>
-  <link rel="shortcut icon" href="pngegg.png" type="image/x-icon">
+  <link rel="shortcut icon" href="edit.png" type="image/x-icon">
   <meta name="description" content="pagina de teste para textarea com links">
   <meta name="keywords" content="HTML, CSS, JavaScript">
   <meta name="author" content="Lauro Otávio Urbano">
@@ -13,34 +13,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&amp;display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <a class="logo" title="Voltar ao início da página." href="../index.html"><img src="pngegg.png"></a>
-</nav>
   <span><h1>Transformando os textos em links</h1></span>
   <h3>Insira o texto com os links completos aqui: </h3>
   <textarea id="conteudo" rows="5" cols="40" placeholder="https://..."></textarea>
   <button onclick="salvarConteudo()">Salvar</button>
   <div id="resultado"></div>
 
-  <script>
-    function salvarConteudo() {
-      const textarea = document.getElementById('conteudo');
-      const resultado = document.getElementById('resultado');
-
-      // pega o conteúdo do textarea
-      const conteudo = textarea.value;
-
-      // salva o conteúdo (em algum lugar como, por exemplo, um banco de dados)
-      // está sendo armazenando na variável
-      const conteudoSalvo = conteudo;
-
-      // regex para processar o conteúdo salvo para transformar URLs em links
-      const regex = /(https?:\/\/[^\s]+)/g;
-      const textoComLinks = conteudoSalvo.replace(regex, '<a href="$1" target="_blank" class="links">$1</a>');
-
-      // insere o conteúdo da div resultado com os links apos o regex
-      resultado.innerHTML = textoComLinks;
-    }
-  </script>
+  <!-- <script src="main.js" defer></script> -->
 </body>
 </html>
